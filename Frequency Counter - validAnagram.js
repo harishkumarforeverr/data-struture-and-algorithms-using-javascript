@@ -52,3 +52,60 @@ res=validAnagram('amanaplanacanalpanama', 'acanalmanplanpamana') // false
 console.log("result",res)
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+############################################################################# 2nd method ###########################################################################
+
+function validAnagram(str1,str2) {
+   if(str1.length!==str2.length) return false;
+   const obj={}; 
+   for(let val of str1){
+      obj[val]=++obj[val]||1;
+   } 
+   for(let i=0;i<str2.length;i++){
+      let char=str2[i]; 
+      if(!obj[char]){
+         return false
+      }
+      obj[char]--;
+   }
+   return true
+}
+
+let res;
+
+res=validAnagram('', '') // true
+console.log("result",res)
+
+res=validAnagram('aaz', 'zza') // false
+console.log("result",res)
+
+res=validAnagram('anagram', 'nagaram') // true
+console.log("result",res)
+
+
+res=validAnagram("rat","car") // false) // false
+console.log("result",res)
+
+res=validAnagram('awesome', 'awesom') // false
+console.log("result",res)
+
+res=validAnagram('amanaplanacanalpanama', 'acanalmanplanpamana') // false
+console.log("result",res)
+
+
+
