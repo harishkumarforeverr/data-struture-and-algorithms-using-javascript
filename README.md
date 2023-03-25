@@ -2,3 +2,7 @@
 
 and udemy url is : https://www.udemy.com/course/js-algorithms-and-data-structures-masterclass/
 
+## visualing the data stuture
+https://visualgo.net/en/sorting
+
+
