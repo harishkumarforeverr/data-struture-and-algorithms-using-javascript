@@ -50,8 +50,8 @@ obj.push(30);
 obj.push(40);
 obj.pop();
 obj.pop();
-obj.pop();
-obj.pop();
-obj.pop();
+// obj.pop();
+// obj.pop();
+// obj.pop();
 
 console.log(obj);
