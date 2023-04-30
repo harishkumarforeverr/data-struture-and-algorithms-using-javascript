@@ -1,3 +1,4 @@
+ 
 class Node {
   constructor(value) {
     this.left = null;
